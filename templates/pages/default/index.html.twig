@@ -1,0 +1,13 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block body %}
+    <div class="text-center">
+        <div {{ stimulus_controller('demo') }} class="fs-3 fw-light text-muted"></div>
+        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Lorem ipsum dolor sit amet, consectetuer</span></h1>
+        <div class="d-grid gap-3 d-sm-flex justify-content-center mb-3">
+            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{{ path('chart_index') }}">Chart</a>
+            <a class="btn btn-outline-dark btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{{ path('contact_review') }}">Review</a>
+            <a class="btn btn-outline-dark btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="{{ path('contact_index') }}">Contact</a>
+        </div>
+    </div>
+{% endblock %}

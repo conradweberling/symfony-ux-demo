@@ -1,0 +1,14 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block body %}
+    <div class="text-center pb-5">
+        <div class="fs-3 fw-light text-muted">Live Components & Turbo Frame</div>
+    </div>
+
+    <turbo-frame id="contact_form">
+        {{ component('ContactComponent', {
+            form: form
+        }) }}
+    </turbo-frame>
+
+{% endblock %}

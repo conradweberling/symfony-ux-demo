@@ -1,0 +1,13 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block body %}
+
+    <div class="text-center pb-5">
+        <div class="fs-3 fw-light text-muted">ChartJS</div>
+    </div>
+
+    <div style="height: 300px;">
+        {{ render_chart(chart) }}
+    </div>
+
+{% endblock %}
